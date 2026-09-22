@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodapé do Portfólio - Enzo Tavares</title>
+    <!-- Tailwind CSS CDN para estilização rápida e moderna -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome para ícones das redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen justify-between">
+
+    <!-- Conteúdo principal simulado para empurrar o rodapé para baixo -->
+    <main class="flex-grow flex items-center justify-center p-8">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold mb-2">Bem-vindo ao meu Portfólio</h1>
+            <p class="text-slate-400">Role até o final da página para ver o rodapé.</p>
+        </div>
+    </main>
+
+    <!-- Rodapé Completo -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            
+            <!-- Coluna 1: Sobre / Identidade -->
+            <div>
+                <h3 class="text-slate-100 text-lg font-semibold mb-3">Enzo Tavares</h3>
+                <p class="text-sm leading-relaxed mb-4">
+                    Estudante de Desenvolvimento de Software apaixonado por criar soluções web modernas, aprender novas tecnologias e transformar ideias em código limpo.
+                </p>
+                <span class="inline-block bg-indigo-500/10 text-indigo-400 text-xs px-3 py-1 rounded-full border border-indigo-500/20 font-medium">
+                    🚀 Disponível para Estágio / Júnior
+                </span>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div>
+                <h3 class="text-slate-100 text-lg font-semibold mb-3">Navegação</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-indigo-400 transition-colors">Sobre mim</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-400 transition-colors">Projetos</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-400 transition-colors">Habilidades</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-400 transition-colors">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Redes Sociais e Contato -->
+            <div>
+                <h3 class="text-slate-100 text-lg font-semibold mb-3">Conecte-se</h3>
+                <p class="text-sm mb-4">Vamos construir algo incrível juntos?</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:enzo@email.com" aria-label="E-mail" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition-all">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Linha Divisória Inferior e Direitos Autorais -->
+        <div class="max-w-6xl mx-auto pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+            <p>&copy; <span id="current-year"></span> Enzo Tavares. Todos os direitos reservados.</p>
+            <p class="mt-2 sm:mt-0 flex items-center gap-1">
+                Feito com <i class="fa-solid fa-heart text-red-500 mx-1"></i> usando HTML & Tailwind CSS
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script simples para atualizar o ano automaticamente -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
